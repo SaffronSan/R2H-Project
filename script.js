@@ -11,7 +11,7 @@ $(document).ready(function(){
   }else{
     dis_mode_eva(true);
   }
-  $.getJSON( "R2H-Project/public/data.json",(data)=> {botdata = data["data"];keys = Object.keys(data.data)});
+  $.getJSON( "/public/data.json",(data)=> {botdata = data["data"];keys = Object.keys(data.data)});
   if(localStorage.getItem("LastPage") != null){
     getPage(localStorage.getItem("LastPage"));
   }else{
@@ -172,7 +172,7 @@ function getPage(page){
       clearInterval(bs);
       $('main').slideUp('slow');
       saveToLocalStorage("LastPage",page);
-      $.get("R2H-Project/public/"+page+'.html',(data)=>{// request the page and adds it to main 
+      $.get("/public/"+page+'.html',(data)=>{// request the page and adds it to main 
         try {
           $('main').html(data).slideDown().fadeIn('slow');
           if($('title').text().includes('Career')){back_to_start()};
