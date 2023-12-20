@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home</title>
+  <!-- Requests various libaries-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="images/logo.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/e9e0f31ea7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script> 
+</head>
+
+<body>
+  <nav class = 'mn navbar navbar-inverse navbar-expand-md justify-content-between p-2'>
+    <div class = 'brand rounded border border-3 shadow p-2 mb-1 bg-light ms-1 border-dark'>
+      <a class = 'navbar-brand'>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-anchor">
+        <circle cx="12" cy="5" r="3"></circle>
+        <line x1="12" y1="22" x2="12" y2="8"></line>
+        <path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>
+      </svg>  
+      </a> 
+      <div class = 'v' style = 'opacity: .5; border-left: black solid 2px; margin-right: 10px; display: inline-block; color:white;'>⁠</div>
+      <label class = 'txt fw-bold lg-text' style='font-size: 1.5em;'>CatShip</label>
+    </div>
+    <ul class = 'navbar-nav border border-3 rounded border-dark shadow p-1 mb-1 me-1' id = 'nav-ul'>
+      <li class = 'nav-item'>
+        <a class="tb nav-link active border-bottom border-dark" aria-current="page" onclick = "getPage('home')">
+          <span data-bs-toggle="tooltip" title="Home!" class="material-symbols-outlined">home</span>
+        </a> 
+      </li>
+      <li class = 'nav-item'>
+        <a class="tb nav-link" aria-current="page" onclick = "getPage('aboutme')">
+          <span data-bs-toggle="tooltip" title="About Me!" class="material-symbols-outlined">account_circle </span>
+        </a> 
+      </li>
+      <li class = 'nav-item'>
+        <a class="tb nav-link" onclick = "getPage('roadtohire')">
+          <span data-bs-toggle="tooltip" title="Road to Hire!" class="material-symbols-outlined">directions_car</span>
+        </a>
+      </li>
+      <li class = 'nav-item'>
+        <a class="tb nav-link" onclick = "getPage('career')">
+          <span data-bs-toggle="tooltip" title="Career!" class="material-symbols-outlined">work</span>
+        </a>
+      </li>
+      <li class = 'nav-item'>
+        <a class="tb nav-link" onclick = "getPage('speaker')">
+          <span data-bs-toggle="tooltip" title="Speaker!" class="material-symbols-outlined">record_voice_over</span>
+        </a>
+      </li>
+      <li class = 'nav-item'>
+        <a class="tb nav-link" onclick = "getPage('contact')">
+          <span data-bs-toggle="tooltip" title="Contact!" class="material-symbols-outlined">contact_page</span>
+        </a>
+      </li>
+      <li style="cursor:pointer" class = 'nav-item m'>
+        <a class = ' nav-link'>
+          <span data-bs-toggle="tooltip" title="Dark mode!" class="material-symbols-outlined mde">dark_mode</span>
+        </a>
+      </li>
+      <li class="bdiv nav-item fixed-bottom">
+        <span data-bs-dismiss="offcanvas" class="material-symbols-outlined mobile">exit_to_app</span>
+      </li>
+    </ul>
+    <button class = 'mobile btn menu' hidden data-bs-toggle="offcanvas" data-bs-target="#nav-ul">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+  </nav>
+  <main class = 'border-top border-bottom border-2'>
+    
+  </main>
+  <footer class = 'position-absolute bottom-25 end-0 w-100 ' id="bottom" >
+    <div class = 'container text-center'>
+      <div class = 'p-3'>
+        <a class = 'navbar-brand'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-anchor">
+            <circle cx="12" cy="5" r="3"></circle>
+            <line x1="12" y1="22" x2="12" y2="8"></line>
+            <path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>
+        </svg>  
+        </a> 
+        <label class = 'txt lg-text' style='font-size: 1.5em;'> CatShip
+        </label>
+      </div>
+      <p>Email for further contact -> <a href = 'https://shorturl.at/ceg89' class = 'text-decoration-underline'>anishthapa2156@gmail.com</a></p>
+    </div>
+    <section class = 'px-4 px-lg-5 '>
+      <div class = 'row gx-4 gx-lg-5 justify-content-center'>
+        <ul class="list-inline text-center">
+          <a target="_blank" href = 'https://github.com/SaffronSan' class="ic list-inline-item" data-bs-toggle="tooltip" title="Github">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke- linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a target="_blank" href = 'https://www.linkedin.com/in/anish-thapa-097a21236/' class="ic list-inline-item"  data-bs-toggle="tooltip" title="Linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+            <path d="M16 8a6 6 09 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"/> </circle>
+            </svg>
+          </a>
+          <a target="_blank" href = 'https://shorturl.at/ceg89' class="ic list-inline-item"  data-bs-toggle="tooltip" title="Instagram">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+           </svg>
+          </a>
+        </ul>
+      </div>
+      <div class="small text-center text-muted fst-italic">Copyright © Anish.Thapa 2022</div>
+    </section>
+  </footer>
+  <script>
+     //$(".feed").append($.parseHTML(JSON.parse(localStorage.getItem("tweets"))["user-tweet-0"]));
+  </script>
+</body>
+
+</html>

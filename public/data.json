@@ -1,0 +1,85 @@
+{
+  "data" : {
+    "walter_white" : [
+      "I Only Had You In My Heart! Skyller!",
+      "I Am The One Who Knocks! Not someone who opens the door!",
+      "If You Believe That There's A Hell, I don't know if you're into that. But I'm not gonna lie down until I get there.",
+      "We aren't done until I say we are done!",
+      "Jessie, I'm In The Empire Business!",
+      "That's right. Now, say my name!",
+      "Heisenberg.\nYou're goddamn right",
+      "Being the best at something is a very rare thing. You don't just toss something like that away.",
+      "Now that we're in control, no one else gets hurt.",
+      "Do you really wanna live in a world without Coca-Cola?"],
+    "jessie_pinkman" : [
+      "Yeah, Mr. White! You really do have a plan! Yeah, science!",
+      "Yeah B****! Magnets! Let's goo!!!!",
+      "Are we in the meth business, or the money business?",
+      "What good is being an outlaw when you have responsibilities?",
+      "You either run from things, or you face them, Mr. White.",
+      "You don’t need a criminal lawyer. You need a criminal lawyer.",
+      "We make poison for people who don’t care. We probably have the most un-picky customers in the world."],
+    "lil_pump" : [
+      "Everything that you done did, I done did it.",
+      "My lean cost more than your rent,\nYour momma still live in a tent.",
+      "Look at my wrist shine\nMy diamonds might make you blind.",
+      "Gucci Gang Gucci Gang Gucci Gang Gucci Gang Gucci Gang Gucci!!!",
+      "My goal is to be the most ignorant, richest rapper I could be.",
+      "We got rich lawyers… The best lawyers on the planet.",
+      "I don’t like telling people telling how old I am."],
+    "saul_goodman": [
+      "Perfection is the enemy of perfectly adequate.",
+      "Thats the point, money is the point.",
+      "Breaking Bad? Better call saul!",
+      "Did you know that you have right?",
+      "Don't Drink And Drive, But When You Do, Call Saul.",
+      "Congratulations! You're Now Officially The Cute One Of The Group.",
+      "If I Ever Get Anal Polyps, At Least I Know What To Name Them.",
+      "It's saul goodman. S'all Good, Man.",
+      "I Travel In Worlds You Can't Even Imagine. You understand?"
+      ],
+    "homelander" : [
+      "I'm the Homelander. And I can do whatever the f*** I want.",
+      "You Guys Are The Real Heroes, We Are Just Glad We Can Help!*smiles",
+      "You See, Companies, They Come And Go. But Talent...Talent Is Forever!",
+      "I'll Laser Every F**king One Of You!",
+      "You're Dispensable, Which Means You Answer To Me!",
+      "I'm stronger. I'm smarter. I'm better!",
+      "I can do whatever I want. I can do... whatever I want. I can do whatever the f*** I want! I can do whatever the f***!",
+      "Who put the f***ing blanket on the bed?",
+      "Starlight, sticks and stones won't break my bones, but words, thery're something!"
+    ],
+    "butcher" : [
+      "Don’t You Worry. Daddy’s Home. Everything is fine, NOW!",
+      "People Love That Cozy Feeling That Supes Give Them. Swoop Out Of The Sky And Save The Day So You Don't Gotta Do It Yourself.",
+      "Translucent's Always Been My Favorite!",
+      "I Bet You'd Thank A Supe If They **** On Your Mum's Best China.",
+      "Hughie, You've Done A Murder. Comparatively Speaking, This Will Be A Piece Of Cake.",
+      "We Didn't Bring Him Here For A F***ing Happy Meal.",
+      "It’s Like Hughie Infected The Both Of You With A Raging Case Of V**Ina."
+    ],
+    "botPic" : [
+      ["7th","Naruto finally becoming hokage! Best ending!"],
+      ["pirate","Strawhat's as a somali pirate about to capture a cargo ship!"],
+      ["timeskip","Luffy after timeskip!"],
+      ["uzi","Weeb Lil uzi vert, trying to be edgy!"],
+      ["walter","Walter White, the mastermind of breaking bad!"],
+      ["walt&jess","The two guys in there work uniform!"],
+      ["lil_gay","When you had too many blunts!"],
+      ["the_boys","One of the best show, on earth!"],
+      ["luffyvsads","Luffy could have one shot them all!"],
+      ["endofabs","A very sad but happy moment, in one piece!"],
+      ["naruto_sag","Naruto worked very hard for this, and it was sick!"],
+      ["whiteman","The strongest man on earth, the pirate emperor!!"]],
+    "botMp3" : [
+      ["southern","|403 - Southern Cross|\nAn old song, from the 2000's. Sang by a Japense in english."],
+      ["mac","|Vektroid - Macintosh Plus|\nA song so, good that it makes you feel high."],
+      ["bone","|Imagine Dragon - Bone |\nCame out this year. Was one of the intro song to 'The Boys'"],
+      ["hiptobesquare","|Huery Lewis & The News - Hip To Be Square|\nNothing really needs to be said, a legendary song!"],
+      ["weare","|One Piece - OP1|\nPropabaly the best one piece opening!"],
+      ["op16","|Naruto - OP 16|\nThe most popular anime opening of all time!"],
+      ["nonstop","|Hamilation - Non Stop|\nThe best song in the musical! I like when they say non-stop!!"],
+      ["rick_roll","|Never gonna give you up|\nNever a song better than this!"]
+    ]
+  }
+}

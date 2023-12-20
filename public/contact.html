@@ -1,0 +1,56 @@
+<title>Contact</title>
+<div class = 'container text-center mx-auto heading'>
+  <h1>Contact Form</h1>
+  <p> If you want to contact me, you can fill this form out and we can get in touch.</p>
+</div>
+<form class = 'container fm rounded border shadow p-3 my-4 h-100'>
+  <div class="input-group mb-4">
+    <label class="input-group-text fbtn border-dark bg-white">Full Name</label>
+    <input type="name" class="form-control" placeholder="John Smith" required>
+  </div>
+  <div class = 'input-group mb-4'>
+    <label class="input-group-text fbtn border-dark bg-white">Email address</label>
+    <input type="email" class="form-control" placeholder="name@example.com" required>
+  </div>
+  <div class = 'input-group'>
+    <label class="input-group-text fbtn border-dark bg-white" for="op1">Color</label>
+    <select class="form-select" id="op1" required>
+        <option selected>Choose...</option>
+        <option value="red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Purple">Purple</option>
+        <option value="Green">Green</option>
+        <option value="Yellow">Yellow</option>
+        <option value="brown">Brown</option>
+        <option value="orange">Orange</option>
+      </select>
+  </div>
+  <label class = "mt-3">Other Info</label>
+  <div class="mt-3 form-floating">
+    <textarea rows="10" style="height:100%;" class="form-control" id="txt" placeholder=""></textarea>
+    <label for="txt">Give me your favorite numbers or whatever else you want to share!</label>
+  </div>
+  <button type="submit" class="btn btn-dark mt-3 sub">Submit</button>
+</form>
+<p class = "text-center foot f-2 text-danger container fm rounded border shadow p-3 my-4 h-100" style = "">
+  Hopefully you didn't put your real email address. I don't want your real data!!<br> If you did, I will delete the email, trust me.
+</p>
+<script>
+  $(".foot").fadeOut("swing");
+  $("form").submit(false);
+  $(".sub").click((e)=>{
+    var color = $("option:selected").text(), email = $("input[type = 'email']").val(), name =  $("input[type = 'name']").val(), other = $("textarea").val();
+    if(color == "Choose..."){alert("Please pick a color, it is very important!");}
+    if(color != "Choose..."  && email != "" && name != ""){
+      $(".heading").slideUp("slow");
+      emSender("From: " + name + "<br>Email: " + email + "<br>Color:" + color + "<br>Other: " + other,false);
+      var d = $("<div>",{class:"text-center container fm rounded border shadow p-3 my-4 h-100"}), message = $("<h1>",{class:"text-success fw-bold",text:"Thank's for the feed back!!"}),
+        img = $("<img>",{class:"rounded w-50 h-50",src:"/images/pepe_gif/pepe-clap.gif"}), otherM = $("<label>",{class:"fw-4",text:"The repsonse you gave me, actually went to me, so again, thank you! ! And, here's your "}),
+        duck = $("<a>",{class:"text-info fst-italic",text:"reward!!",href:"https://thumbs.gfycat.com/CompleteCleverChimpanzee-size_restricted.gif",target:"_blank"});
+      $(otherM).append(duck);
+      $(d).append([message,img,otherM]);
+      $("form").slideUp("slow").replaceWith($(d));
+      $(".foot").slideDown("slow");
+    }
+  });
+</script>

@@ -1,0 +1,106 @@
+<title>RoadtoHire</title>
+<section class ="container mt-0">
+  <div class="mb-2 border ">
+    <div class="wrapper h-100 w-100">
+      <i class="d-block main-wrapper" style=""></i>
+      <div class="d-flex  flex-row justify-content-between" style="">
+          <div class="profile-link" style=" margin:-60px 5px 0px 8px;">
+            <a target="_blank" href='https://www.roadtohire.org/'>
+            <img class="img rounded-circle profi" src="https://pbs.twimg.com/profile_images/1576979349391261696/rvLdZcqo_400x400.jpg" width="100px" height="100px" style="margin-left: 0px;">
+            </a>
+          </div>
+          <a class="mt-2 me-2 fs-4"><i class="fa-solid fa-heart"></i></a>
+      </div>
+      <div class="container d-flex flex-coulmn">
+        <div class = "p-0">
+          <div>
+            <label class = "fs-4 fw-bold m-0">Road to hire</label>
+            <a class = "border-0" style = "font-size: 18px;"><i class="fa-solid fa-square-check"></i></a>
+          </div>
+          <label class="text-secondary" style = "font-size: 14px;">@roadtohire</label>
+          <label class = "d-block" style = "font-size: 14px;">
+            R2H diversifies corporate workspaces by supporting high school students, college students & young adults on their way to higher ed, paid training & careers.
+          </label>
+        <div class = "mt-2">
+          <label class = "d-block text-secondary" style = "font-size: 14px;">
+            <i class="fa-solid fa-briefcase"></i>
+            Non-Governmental & Nonprofit Organization
+            <i class="fa-solid fa-location-dot"></i>
+            Charlotte, NC
+          </label>
+          <label class = "d-block" style = "font-size: 12px;">
+            <a target="_blank" href="https://www.roadtohire.org/" class = "me-1"><i class="fa-solid fa-link"></i>roadtohire</a>
+            <i class="fa-regular fa-calendar"></i> 
+            <span class ="text-secondary">Joined June 2016</span>
+          </label>
+        </div>
+        </div>
+      </div>
+    </div>
+    <ul class="nav border-0 px-1 nav-tabs d-flex justify-content-between  nav-fill" 
+      style="border-top:none!important; ">
+      <li class="nav-item">
+        <a class="nav-link pn">Mission Statement</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pn">Ceo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pn">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pn">Personal Experience</a>
+      </li>
+    </ul>
+  </div>
+  <div class = "abc container-fulid p-5">
+    <article id = "missionstatement">
+      <p>Road to hire mission is support and hire diverse talent.Road to Hire and its partners support underrepresented high school students, college students and young professionals on their way to strong, sustainable tech careers.</p>
+    </article>
+    <article id = "ceo">
+      <h2>Kacey Grantham</h2>
+      <a target="_blank" class = "" href="https://www.linkedin.com/in/kacey-grantham/"><img class = "border shadow float-start me-1" src='https://media-exp1.licdn.com/dms/image/C5603AQF6ZBv2jli5BQ/profile-displayphoto-shrink_800_800/0/1659199941518?e=1675900800&v=beta&t=iMKDe6EXt-rM-fQWudl4CDTvdgNOCGwa5DE09t3Nc-Q' width = "100px" height="100px"/></a>
+      <p class = "">Her commitment to economic justice and racial equity stems from a deep belief that everyone’s children deserve to be safe, healthy and educated. Education is a catalyst for hope and confidence. Yet education at all levels is deeply unequal in the United States, based primarily on race and socioeconomic status. The inequitable results are clear and damaging. At Road to Hire they are part of a movement in Charlotte and across the country that is testing and implementing innovative ways for public-private partnerships to support prosperity for historically marginalized groups and transform oppressive systems that slow down progress. Ms.Grantham has worked for many different comapnies, like a senior manjor at bank of america, which is one of the biggest bank in america. She also use to be vice president in marketing in red venture which is the parent company of road to hire, which in itself is very impressive owning cnet and healthline, very big websites worth billions of dollar. You can tell by her passion and history of working for high position that road to hire is in safe hands and will be very succesful with her being the ceo.</p>
+    </article>
+    <article id = "about">
+      <p>Road to Hire interrupts cycles of intergenerational poverty by ensuring the young people in its programs have access to higher education, high-earning careers and prosperous futures.
+
+R2H programs are designed to meet students where they are and provide pathways to high-growth careers in STEM. Road to Hire’s Pathways, Scholarship and Apprenticeship programs serve first-gen college students, students of color and students from low-income backgrounds.
+
+Road to Hire prioritizes serving students whose opportunities continue to be limited by financial barriers and systemic racism, preparing them for technology, healthcare, engineering and other in-demand careers.</p>
+    </article>
+    <article id = "personalexperience">
+      <p>I have had a pretty good experience in road to hire. So far the class has, been entertaing and educating enough to point where I would activly wait for third block. Also, it has taught me some new skill in note taking, I didn't know there were types of note taking, after I learned about this skill, my noting taking has gotten so much more better.</p>
+    </article>
+  </div>
+</section>
+<style>
+  .main-wrapper {
+    background-image: url('https://pbs.twimg.com/profile_banners/740278685891076096/1664813979/1500x500'); 
+    border-radius: 4px 4px 0px 0px;
+    height: 28rem;
+    background-size: 100% 90%;
+  }
+  .pn{
+    color: #000;
+  }
+  a{
+    cursor: pointer;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+</style>
+<script>
+  $(document).ready( () => {
+    $($(".pn")[0]).addClass("active");
+    $("#personalexperience,#ceo,#about").hide();
+    $('.pn').click((e)=>{
+      let ele = e.target, nextEle = () => $('.pn.active').text().toLowerCase().replace(/\s/g, '');
+      $("#" + nextEle()).slideUp("slow");
+      $($(".pn.active")[0]).removeClass("active border-light");
+      $(ele).addClass("active");
+      $("#" + nextEle()).slideDown("slow");
+    });
+  });
+</script>

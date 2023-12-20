@@ -1,0 +1,94 @@
+<title>Home</title>
+<header class = 'bg-secondary bg-opacity-10 p-1 shadow w-100'>
+  <div class = ' text-center'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-anchor w-25 h-25 opacity-75">
+      <circle cx="12" cy="5" r="3"></circle>
+      <line x1="12" y1="22" x2="12" y2="8"></line>
+      <path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>
+    </svg>
+    <p class = ''>
+      <h1 class = 'lg-text'>CatShip</h1>
+      <p class = 'mt-1 blockquote-footer'>
+        A bird tweets, but a cat meows.
+      </p>
+    </p>
+  </div>
+</header>
+<div class = 'container-fulid text-start p-5 mx-auto my-2'>
+  <h3 class = ''>Introduction</h3>
+  <article class = ''>This website is made for road to hire, a ogranization that helps student have a better future.
+     You can learn more about them, in the road to hire page, and theres two ways to access that, one is in the navbar in the top-right.
+     Or you can scroll down, and fidget around the slider to find the road to hire page. But this project is simply, to test us for our ablitiy to learn new things. However, I'm very lucky we had to make a website, since I already have some experience of making one, I didn't have to learn any new material.
+    <br><br>
+    <p class = ''> 
+      But a quick info form the maker of this website, my name is Anish, I do have a copyright at the bottom, but it is not real. I am currently in high school, and this is not my first time making a website, however I have never used bootstrap(what is mainly used in this site) before, so some elements might look funky. Some links, will not be the right link, so don't expect all of the links to work as inteded. But you are free to explore.
+    </p>
+  </article>
+</div>
+<div class = 'container-fulid border-secondary border-1 border-top'>
+  <h2 class='text-center p-2'>Site preview</h2>
+  <section  id="cards" data-bs-ride="carousel" class = 'p-3 carousel slide'>
+    <div class="carousel-indicators mb-0">
+      <button type="button" data-bs-target="#cards" data-bs-slide-to="0" class="ibtn active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#cards" data-bs-slide-to="1" class="ibtn bg-dark" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#cards" data-bs-slide-to="2" class="ibtn bg-dark" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#cards" data-bs-slide-to="3" class="ibtn bg-dark" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#cards" data-bs-slide-to="4" class="ibtn bg-dark" aria-label="Slide 5"></button>
+    </div>
+    <div class = 'carousel-inner cards-wrapper'>
+      <div class = 'carousel-item text-center active card border-dark border-3'>
+        <img class = 'card-img-top w-75 h-50' src = 'https://cdn-icons-png.flaticon.com/512/64/64572.png'/>
+        <div class = 'card-body border-top border-dark border-3'>
+          <h5 class = 'card-title'>About me Page</h5>
+          <p class = 'card-text'>This page will show you some cool stuff about me.</p>
+          <button onclick = 'getPage("aboutme")' class="btn fixed-bottom btn-dark cbtn text-white rounded-0 p-3 m-0">Go to Page</button>
+        </div>
+      </div>
+      <div class = 'carousel-item text-center card'>
+        <img class = 'card-img-top h-50 w-50' src = 'https://cdn-icons-png.flaticon.com/512/62/62512.png'/>
+        <div class = 'card-body border-top border-dark border-3'>
+          <h5 class = 'card-title'>Road To Hire</h5>
+          <p class = 'card-text'>
+            This page is about road to hire.</p>
+           <button onclick = 'getPage("roadtohire")' class="btn fixed-bottom btn-dark cbtn text-white rounded-0 p-3 m-0">Go to Page</button>
+        </div>
+    </div>
+      <div class = ' carousel-item text-center card'>
+        <img class = 'card-img-top h-50 w-50' src = 'https://cdn-icons-png.flaticon.com/512/1589/1589131.png'/>
+        <div class = 'card-body border-top border-dark border-3'>
+          <h5 class = 'card-title'>Career Page</h5>
+          <p class = 'card-text'>
+            This page I will inform you about my future career.
+          </p>
+           <button onclick = 'getPage("career")' class="btn fixed-bottom btn-dark cbtn text-white rounded-0 p-3 m-0">Go to Page</button>
+        </div>
+      </div>
+      <div class = ' carousel-item text-center card'>
+        <img class = 'card-img-top h-50 w-50' src = 'https://cdn-icons-png.flaticon.com/512/2572/2572197.png'/>
+        <div class = 'card-body border-top border-dark border-3'>
+          <h5 class = 'card-title'>Speaker Page</h5>
+          <p class = 'card-text'>
+            This page will show you my favorite speaker.
+          </p>
+          <button onclick = 'getPage("speaker")' class="btn fixed-bottom btn-dark cbtn text-white rounded-0 p-3 m-0">Go to Page</button>
+        </div>
+      </div>
+      <div class = ' carousel-item text-center card'>
+        <img class = 'card-img-top h-50 w-50' src = 'https://cdn-icons-png.flaticon.com/512/9107/9107328.png'/>
+        <div class = 'card-body border-top border-dark border-3'>
+        <h5 class = 'card-title'>Contact Page</h5>
+        <p class = 'card-text'>
+          This page will show you how to get into contact with me. 
+        </p>
+        <button onclick = 'getPage("contact",this)' class="btn fixed-bottom btn-dark cbtn text-white rounded-0 p-3 m-0">Go to Page</button>
+      </div>
+</div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#cards" data-bs-slide="prev">
+      <span class="material-symbols-outlined cbtn text-dark" aria-hidden="true">arrow_back_ios</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cards" data-bs-slide="next">
+      <span class="material-symbols-outlined cbtn text-dark" aria-hidden="true">arrow_forward_ios</span>
+    </button>
+  </section>
+</div>
