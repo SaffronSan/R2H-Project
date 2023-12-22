@@ -87,7 +87,7 @@ let slideLeft = (ele='',start,end,speed) => {
 };
 let emSender = (body,type = true) =>{
     Email.send({
-      SecureToken : "dde5f9dd-e897-4aa1-856f-264ea9452534",
+      SecureToken : "",
       To : 'anishthapa2156@gmail.com',
       From : "redsavage2x@gmail.com",
       Subject : type? "User tweet" : "Contact Form",
