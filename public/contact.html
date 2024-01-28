@@ -45,8 +45,8 @@
       $(".heading").slideUp("slow");
       emSender("From: " + name + "<br>Email: " + email + "<br>Color:" + color + "<br>Other: " + other,false);
       var d = $("<div>",{class:"text-center container fm rounded border shadow p-3 my-4 h-100"}), message = $("<h1>",{class:"text-success fw-bold",text:"Thank's for the feed back!!"}),
-        img = $("<img>",{class:"rounded w-50 h-50",src:"/images/pepe_gif/pepe-clap.gif"}), otherM = $("<label>",{class:"fw-4",text:"The repsonse you gave me, actually went to me, so again, thank you! ! And, here's your "}),
-        duck = $("<a>",{class:"text-info fst-italic",text:"reward!!",href:"https://thumbs.gfycat.com/CompleteCleverChimpanzee-size_restricted.gif",target:"_blank"});
+        img = $("<img>",{class:"rounded w-50 h-50",src:"./images/pepe_gif/pepe-clap.gif"}), otherM = $("<label>",{class:"fw-4",text:"The repsonse you gave me, actually went to me, so again, thank you! ! And, here's your "}),
+        duck = $("<a>",{class:"text-info fst-italic",text:"reward!!",href:"https://raw.githubusercontent.com/SaffronSan/R2H-Project/main/images/DuckRoll.gif",target:"_blank"});
       $(otherM).append(duck);
       $(d).append([message,img,otherM]);
       $("form").slideUp("slow").replaceWith($(d));
