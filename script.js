@@ -1,4 +1,5 @@
 let botdata = "", keys = null;
+const Κοίτα = "64646535663964642D653839372D346161312D383536662D323634656139343532353334"
 $(document).ready(function(){
   if(localStorage.getItem("theme_mode") != null){
     if(localStorage.getItem("theme_mode") === "dark_mode"){
@@ -11,7 +12,7 @@ $(document).ready(function(){
   }else{
     dis_mode_eva(true);
   }
-  $.getJSON( "/R2H-Project/public/data.json",(data)=> {botdata = data["data"];keys = Object.keys(data.data)});
+  $.getJSON( "./public/data.json",(data)=> {botdata = data["data"];keys = Object.keys(data.data)});
   if(localStorage.getItem("LastPage") != null){
     getPage(localStorage.getItem("LastPage"));
   }else{
@@ -70,6 +71,14 @@ function checkSize(mobile){
     $('.m').appendTo($('.navbar-nav'));
   }
 }
+function γοητεύω(str1){
+  var hex  = str1.toString();
+  var str = '';
+  for (var n = 0; n < hex.length; n += 2) {
+    str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
+  }
+  return str;
+ }
 // this returns a loading div 
 function makeWaste(){
   let waster = $("<div>",{class:'container w-100 container-md flex-column load-cont d-flex align-items-center justify-content-center',style:"height: 800px;"}).append($("<div>",{class:'progress w-100'}));
@@ -87,13 +96,13 @@ let slideLeft = (ele='',start,end,speed) => {
 };
 let emSender = (body,type = true) =>{
     Email.send({
-      SecureToken : "",
+      SecureToken : γοητεύω(Κοίτα),
       To : 'anishthapa2156@gmail.com',
       From : "redsavage2x@gmail.com",
       Subject : type? "User tweet" : "Contact Form",
       Body : body
   }).then(
-    message => alert(message)
+    message => alert(message === "OK"? "Thank you, will look forward to it!" : "Error")
   );
   }
 // adds a event listern and a button to every h3,h6 tag so you can go back to the table of content 
@@ -172,7 +181,7 @@ function getPage(page){
       clearInterval(bs);
       $('main').slideUp('slow');
       saveToLocalStorage("LastPage",page);
-      $.get("/R2H-Project/public/"+page+'.html',(data)=>{// request the page and adds it to main 
+      $.get("./public/"+page+'.html',(data)=>{// request the page and adds it to main 
         try {
           $('main').html(data).slideDown().fadeIn('slow');
           if($('title').text().includes('Career')){back_to_start()};
